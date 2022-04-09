@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ChatbotController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,5 @@ use App\Http\Controllers\Frontend\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-
+Route::get('/chatbot', [ChatbotController::class, 'index']);
 
