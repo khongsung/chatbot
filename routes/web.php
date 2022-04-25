@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ChatbotController;
+use App\Http\Controllers\Backend\TelegramBotController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,10 @@ use App\Http\Controllers\Frontend\ChatbotController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/chatbot', [ChatbotController::class, 'index']);
+
+Route::get('/updated-activity', [TelegramBotController::class, 'updatedActivity']);
+Route::get('/webhook', [TelegramBotController::class, 'webhook']);
+
+Route::get('/contact', [TelegramBotController::class, 'contactForm']);
+Route::post('/send-message', [TelegramBotController::class, 'sendMessage']);
 
