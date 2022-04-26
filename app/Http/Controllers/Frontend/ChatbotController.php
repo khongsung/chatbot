@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 
 class ChatbotController extends Controller
 {
-   	return response()->json([
-   		'nam' => 'khongsung',
-   	]);
+   	public function index() {
+   		return response()->json([
+   			'name' => 'Abigail',
+   			'state' => 'CA',
+   		]);
+   	}
 }
