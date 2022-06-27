@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Freshman;
+  src: url("/fonts/Freshman.ttf");
+}
+body {
+  height: 100vh;
+  background: black;
+  color: white;
+  font-family: Freshman;
+  font-style: normal;
+}
+
+span {
+  font-style: normal !important;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250px;
+}
+.container .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #1c1c1c;
+}
+.container .flex .line {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: black;
+}
+.container .hour {
+  width: 400px;
+  height: 450px;
+  background: linear-gradient(#2c2c2c7d, #0000004d);
+  position: relative;
+  margin-right: 15px;
+}
+.container .hour .session {
+  font-size: 20%;
+  position: absolute;
+}
+.container .hour #am {
+  top: 20px;
+  left: 20px;
+}
+.container .hour #pm {
+  bottom: 20px;
+  left: 20px;
+}
+.container .minute {
+  width: 400px;
+  height: 450px;
+  background: linear-gradient(#2c2c2c7d, #0000004d);
+  margin-left: 15px;
+}
