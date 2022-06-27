@@ -25,16 +25,15 @@ span {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	font-size: 250px;
-	.flex {
+	justify-content: center;
+	flex-direction: column;
+	
+	.time {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		padding: 20px;
-		border-radius: 20px;
-		box-shadow: 0 5px 5px #1c1c1c;
+		align-items: center;
+		position: relative;
 		.line {
 			position: absolute;
 			z-index: 100;
@@ -44,31 +43,45 @@ span {
 			height: 8px;
 			background: $background;
 		}
-	}
-	.hour {
-		width: $width;
-		height: $height;
-		background: $bg-hour;
-		position: relative;
-		margin-right: 15px;
-		.session {
-			font-size: 20%;
-			position: absolute;
+		.flex {
+			font-size: 250px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			border-radius: 20px;
+			box-shadow: 0 5px 5px #1c1c1c;
 		}
-		#am {
-			top: 20px;
-			left: 20px;
+		.hour {
+			width: $width;
+			height: $height;
+			background: $bg-hour;
+			position: relative;
+			margin-right: 15px;
+			.session {
+				font-size: 20%;
+				position: absolute;
+			}
+			#am {
+				top: 20px;
+				left: 20px;
+			}
+			#pm {
+				bottom: 20px;
+				left: 20px;
+			}
 		}
-		#pm {
-			bottom: 20px;
-			left: 20px;
-		}
-	}
 
-	.minute {
-		width: $width;
-		height: $height;
-		background: $bg-hour;
-		margin-left: 15px;
+		.minute {
+			width: $width;
+			height: $height;
+			background: $bg-hour;
+			margin-left: 15px;
+		}
 	}
+	.date {
+		margin-top: 50px;
+		font-size: 40px;
+	}
+	
 }
