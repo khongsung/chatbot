@@ -48,7 +48,7 @@
     		document.getElementById("hh").innerText = hh; 
     		document.getElementById("mm").innerText = mm;
 
-    		if (session = "PM") {
+    		if (session == "PM") {
     			document.querySelector('#am').style.display = 'none';
     			document.querySelector('#pm').style.display = 'block';
     		} else {
